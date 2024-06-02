@@ -232,6 +232,16 @@ footer {
   header nav .icon {
       display: block;
   }
+   .hero1 {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 20px ;
+    text-align: left;
+  }
 }
 /* Add these styles to your existing CSS */
 
