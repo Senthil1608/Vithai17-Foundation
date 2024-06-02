@@ -232,7 +232,7 @@ footer {
   header nav .icon {
       display: block;
   }
-   .hero1 {
+  .hero1 {
     background: url('hero.jpg') no-repeat center center/cover;
     height: 500px;
     color: #fff;
