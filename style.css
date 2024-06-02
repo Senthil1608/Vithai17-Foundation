@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #b0f4ac;
+  /* background-color: #58b1ff; */
+  color: #333;
+}
+
+header {
+  background: #01721a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .nav-links ul li {
+  margin-right: 1rem;
+}
+
+header nav .nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header nav .icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.container1 {
+  width: 80%;
+  margin-left:40px;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero1 {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-size: 30px ;
+  text-align: left;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #e8491d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #c32b01;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  height: auto; /* Adjusted from 120% to auto to avoid fixed height issue */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up the card to 105% on hover */
+}
+
+
+.card h3 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: auto;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.gallery-btn.prev {
+  left: 0;
+}
+
+.gallery-btn.next {
+  right: 0;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav .nav-links {
+      display: none;
+      width: 100%;
+  }
+
+  header nav .nav-links ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+
+  header nav .nav-links ul li {
+      margin: 10px 0;
+  }
+
+  header nav .icon {
+      display: block;
+  }
+}
+/* Add these styles to your existing CSS */
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.phone {
+  background-color: #33cc33;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.email {
+  background-color: #ff4500;
+}
+
+.instagram {
+  background-color: #e4405f;
+}
+/* Add this to your existing CSS or Tailwind CSS classes */
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 0.1 rem; /* Adjust margin as needed */
+}
+.h-8{
+  height: 50px;
+  width: 50px;;
+}

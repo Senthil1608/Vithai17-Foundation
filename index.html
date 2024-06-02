@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vithai17-Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vithai-17 Foundation</h1>
+            <nav>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#9776;
+                </a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero1" style="background:url('backend.jpg'); background-repeat: no-repeat; background-size: cover; ">
+        <div class="container1">
+            <h2 style="color:rgb(2, 126, 8);">Making a Difference in the World</h2>
+            <p style="color:black;">A seed sown towards sustainability on 1st July 2023,<br> Join us in our mission to improve lives and build better<br> futures.</p>
+            <a href="#about" class="btn" >Learn More</a>
+        
+        </div>
+
+    </section>
+    <br>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p style="color:black;">Our NGO is dedicated to making the world a better place through various initiatives and projects aimed at improving lives and fostering sustainable development.</p>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Project One</h3>
+                    <p>Description of project one.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Two</h3>
+                    <p>Description of project two.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Three</h3>
+                    <p>Description of project three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>P S SENTHIL SRINIVAS</h3>
+                    <img src="2402B721 Senthil (2).jpg" height="200px">
+                    <p>Founder</p>
+                </div>
+                <div class="card">
+                    <h3>M Vishal</h3>
+                    <img src="Vishal12thPassportPhoto - Vishal M.png" height="200px">
+                    <p>Co Founder</p>
+                </div>
+
+                <div class="card">
+                    <h3>Saravanan S</h3>
+                    <img src="IMG-20220915-WA0013 - Saravanan S.jpg" height="200px">
+                    <p>Director</p>
+                </div>
+                <div class="card">
+                    <h3>Tharushi SS</h3>
+                    <img src="tharushi.jpg" height="200px">
+                    <p>Strategic Advisor</p>
+                </div>
+                <div class="card">
+                    <h3>Kathiravan S</h3>
+                    <img src="Kathiravan - Kathiravan S.jpg" height="200px">
+                    <p>Secretary</p>
+                </div>
+                <div class="card">
+                    <h3>Shree Bala Aadithya B</h3>
+                    <img src="Photo (3) - aadithya bala.jpg" height="200px">
+                    <p>Treasurer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="back1.jpg" alt="Gallery Image 1" class="gallery-image">
+               
+                <button class="gallery-btn prev" onclick="prevImage()">&#10094;</button>
+                <button class="gallery-btn next" onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get involved, please reach out to us.</p>
+            <form action="#">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NGO Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        var currentImageIndex = 0;
+        var images = ["back1.jpg", "back2.jpg", "back4.jpg"];
+
+        function showImage(index) {
+            var imgElement = document.querySelector(".gallery-image");
+            imgElement.src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            showImage(currentImageIndex);
+        }
+    </script>
+</body>
+</html>
