@@ -213,7 +213,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   header nav .nav-links {
       display: none;
       width: 100%;
