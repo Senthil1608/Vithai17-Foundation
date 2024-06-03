@@ -39,6 +39,7 @@ header nav .nav-links ul li {
   margin-right: 1rem;
 }
 
+
 header nav .nav-links ul li a {
   color: #fff;
   text-decoration: none;
@@ -97,7 +98,8 @@ header nav .icon {
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #e8491d;
+  /* background: #e8491d; */
+  background:#01721a;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -105,7 +107,7 @@ header nav .icon {
 .btn:hover{
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #c32b01;
+  background:#01721a;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -132,6 +134,11 @@ header nav .icon {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.cards1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .card {
   background: #fff;
@@ -145,7 +152,18 @@ header nav .icon {
   text-align: center;
   transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
-
+.card1{
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  height: auto; /* Adjusted from 120% to auto to avoid fixed height issue */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
 .card:hover {
   transform: scale(1.05); /* Scale up the card to 105% on hover */
 }
@@ -213,7 +231,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 668px) {
+@media (max-width: 568px) {
   header nav .nav-links {
       display: none;
       width: 100%;
@@ -239,8 +257,26 @@ footer {
     display: flex;
     justify-content: left;
     align-items: left;
-    font-size: 20px ;
+    font-size: 18px ;
     text-align: left;
+  }
+  .cards1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .card1{
+    background: #ffffff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    height: auto; /* Adjusted from 120% to auto to avoid fixed height issue */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
   }
 }
 /* Add these styles to your existing CSS */
