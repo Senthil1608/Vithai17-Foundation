@@ -6,11 +6,26 @@
     <title>Vithai17-Foundation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header img {
+    margin-right: 10px;
+}
+
+</style>
 <body>
     <header>
         <div class="container">
-            <h1>Vithai-17 Foundation</h1>
+            
             <nav>
+                <div class="nav-header">
+                    <img src="logo_v2.jpg" height="50px">
+                    <h1>Vithai-17 Foundation</h1>
+                </div>
                 <div class="nav-links" id="nav-links">
                     <ul>
                         <li><a href="#about">About Us</a></li>
@@ -39,24 +54,42 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
-            <p style="color:black;">Our NGO is dedicated to making the world a better place through various initiatives and projects aimed at improving lives and fostering sustainable development.</p>
+            <p style="color:black;">At VITHAI 17 FOUNDATION, our vision is a world where every individual, regardless of their background, 
+                has the opportunity to thrive in a sustainable and harmonious environment. We believe in a future where the 17 Sustainable 
+                Development Goals are not just a framework but a way of life, inspiring positive change in every corner of the globe.</p>
+            <p style="color: black;">Our mission is clear and resolute. We are committed to raising awareness and driving action towards the 
+                17 Sustainable Development Goals by collaborating with communities, governments, and organizations worldwide. Through education, 
+                advocacy, and sustainable initiatives, we aim to empower individuals to become active agents of change and contribute to a brighter, 
+                more sustainable future for all.</p>
         </div>
     </section>
     <section id="projects" class="section">
         <div class="container">
             <h2>Our Projects</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Project One</h3>
-                    <p>Description of project one.</p>
+            <div class="cards1">
+                <div class="card1">
+                    <h3>Teacher's Talk</h3>
+                    <br>
+                    <p style="font-size:smaller;">It was an immense pleasure for us to be able to appreciate our teachers both young and experienced. 
+                        We took this opportunity to get them down a nostalgia trip by inviting their old students which made 
+                        our teachers emotional. Thanks to our beloved teachers for accepting our invitation and providing us with 
+                        insights and blessings and a special thanks to the volunteers who invited the teachers to be on our event.
+                        </p><br>
                 </div>
-                <div class="card">
-                    <h3>Project Two</h3>
-                    <p>Description of project two.</p>
+                <div class="card1">
+                    <h3>Speak UP-1.0</h3>
+                    <br>
+                    <!-- <img src="speak.jpg" height="400px" width="250px"> -->
+                        <p style="font-size: smaller;">Hello everyone, we're thrilled to announce the debut of "Speak Up-1.0" – a six-day online course designed to amplify 
+                        the communication skills of aspiring engineers, empowering them for future success. We extend our heartfelt thanks to
+                        Genik Technologies Pvt. Ltd. for their sponsorship and certification of the course. We're also delighted to have
+                        Ms. Bonny Roy from LMOIS guiding the students as their mentor. This initiative from Vithai-17 Foundation is a modest
+                        stride towards quality education.</p>
                 </div>
-                <div class="card">
-                    <h3>Project Three</h3>
-                    <p>Description of project three.</p>
+                <div class="card1">
+                    <h3>Skill Up-1.0</h3>
+                    <br><br>
+                    <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 40px; color: rgb(232, 31, 4);">Ongoing Project</p>
                 </div>
             </div>
         </div>
@@ -103,7 +136,7 @@
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-container">
-                <img src="back1.jpg" alt="Gallery Image 1" class="gallery-image">
+                <img src="back5.jpg" alt="Gallery Image 1"  class="gallery-image">
                
                 <button class="gallery-btn prev" onclick="prevImage()">&#10094;</button>
                 <button class="gallery-btn next" onclick="nextImage()">&#10095;</button>
@@ -123,8 +156,9 @@
         </div>
     </section>
     <footer>
+
         <div class="container">
-            <p>&copy; 2024 NGO Name. All rights reserved.</p>
+            <p>&copy; 2024 Vithai17-Foundation All rights reserved.</p>
         </div>
     </footer>
     <script>
@@ -138,7 +172,7 @@
         }
 
         var currentImageIndex = 0;
-        var images = ["back1.jpg", "back2.jpg", "back4.jpg"];
+        var images = ["back5.jpg", "back2.jpg", "back4.jpg","back1.jpg","back6.jpg"];
 
         function showImage(index) {
             var imgElement = document.querySelector(".gallery-image");
